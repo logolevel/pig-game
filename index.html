@@ -9,28 +9,36 @@
   </head>
   <body>
     <main>
-      <section class="player player--0 player--active">
-        <h2 class="name" id="name--0">Player 1</h2>
-        <p class="score" id="score--0">43</p>
-        <div class="current">
-          <p class="current-label">Current</p>
-          <p class="current-score" id="current--0">0</p>
+      <div class="players"></div>
+      <div class="controls">
+        <img src="dice-5.png" alt="Playing dice" class="dice" />
+        <button class="btn btn-absolute btn--new">🔄 New game</button>
+        <div class="btn-absolute buttons-players">
+          <span>Choose Number of Players:</span> 
+          <button class="btn active btn--players-2" data-player="2">2</button>
+          <button class="btn btn--players-3" data-player="3">3</button>
+          <button class="btn btn--players-4" data-player="4">4</button>
         </div>
-      </section>
-      <section class="player player--1">
-        <h2 class="name" id="name--1">Player 2</h2>
-        <p class="score" id="score--1">24</p>
-        <div class="current">
-          <p class="current-label">Current</p>
-          <p class="current-score" id="current--1">0</p>
-        </div>
-      </section>
+        <button class="btn btn-absolute btn--roll">🎲 Roll dice</button>
+        <button class="btn btn-absolute btn--hold">📥 Hold</button>
+      </div>
 
-      <img src="dice-5.png" alt="Playing dice" class="dice" />
-      <button class="btn btn--new">🔄 New game</button>
-      <button class="btn btn--roll">🎲 Roll dice</button>
-      <button class="btn btn--hold">📥 Hold</button>
     </main>
+    <!-- <a href="https://pig-game-v2.netlify.app/">link to the initial source</a> -->
+    <template id="tmpl">
+      <section class="player">
+        <div class="name-wrapper">
+          <button class="change-name save-name hidden" title="save name">✔️</button>
+          <button class="change-name edit-name" title="edit name">✏️</button>
+          <input class="name" value="Player-1" readonly>
+        </div>
+        <p class="score">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score">0</p>
+        </div>
+      </section>
+    </template>
     <script src="script.js"></script>
   </body>
 </html>
