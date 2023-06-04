@@ -46,10 +46,6 @@ const onChangeNumberOfPlayers = function(e) {
             init(customScorers);
             break;
         default:
-            removeActiveClass();
-            target.classList.add('active');
-            customScorers = [0, 0];
-            init(customScorers);
     }
 }
 
