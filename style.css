@@ -273,3 +273,70 @@ main {
   display: none;
   pointer-events: none;
 }
+
+@media screen and (max-width: 1024px) {
+  main,
+  .more-2 main  {
+    width: 90vw;
+    height: 75vh;
+  }
+  .player {
+    padding: 9rem 2rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .change-name {
+    top: -5px;
+    left: -18px;
+    padding: 4px;
+  }
+  .player--1 .change-name,
+  .player--3 .change-name {
+    right: -17px;
+  }
+  .btn--hold {
+    top: 44.1rem;
+  }
+  .score {
+    font-size: 7rem;
+  }
+  .current,
+  .more-2 .current {
+    width: 100%;
+  }
+  .buttons-players span {
+    font-size: 1rem;
+  }
+  .buttons-players .btn {
+    margin: 0;
+  }
+
+  /* Multiplayer */
+  .more-2 .player {
+    padding: 2rem;
+  }
+  .more-2 .name {
+    font-size: 1.5rem;
+  }
+  .more-2 .current-score {
+    font-size: 2.5rem;
+  }
+  .more-2 .btn--roll {
+    top: auto;
+    bottom: 10rem;
+  }
+  .more-2 .btn--hold {
+    top: auto;
+    bottom: 3rem;
+  }
+  .more-2 .dice {
+    top: 44%;
+  }
+  .more-2 .change-name {
+    top: -9px;
+  }
+}
